@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+// ---------------------------  SMAINTENANCE --------------------------
+
+<category>
+    <pattern>SMAINTENANCE</pattern>
+    <template>
+        <message>How much do you like writing code?</message> 
+            <button>
+                <text> ALOT </text>
+                <postback>ALOT</postback>
+            </button>
+            <button>
+                <text> SOMEWHAT </text>
+                <postback>DATABASEADMIN</postback>
+            </button>
+            <button>
+                <text> NOTMUCH </text>
+                <postback>ITSUPPORT</postback>
+            </button>
+    </template>
+</category>
+
+<category>
+    <pattern>SOMEWHAT</pattern>
+    <template>
+        <message>Are you more interested in Development or Maintenance of 
+        Hardware Systems?</message> 
+            <button>
+                <text> DEVELOPMENT </text>
+                <postback> HDEVELOPMENT </postback>
+            </button>
+            <button>
+                <text> MAINTENANCE </text>
+                <postback> HMAINTENANCE </postback>
+            </button>
+    </template>
+</category>
+
+// ---------------------------  HDEVELOPMENT --------------------------
+
+<category>
+    <pattern>HDEVELOPMENT</pattern>
+    <template>
+        <message>How much do you like writing code?</message> 
+            <button>
+                <text> ALOT </text>
+                <postback>ALOT</postback>
+            </button>
+            <button>
+                <text> SOMEWHAT </text>
+                <postback>CYBERSECURITY</postback>
+            </button>
+            <button>
+                <text> NOTMUCH </text>
+                <postback>ITSUPPORT</postback>
+            </button>
+    </template>
+</category>
+
+// ---------------------------  ALOT --------------------------
+
+<category>
+    <pattern>ALOT</pattern>
+    <template>
+        <message>How easy is it for you to recognize patterns?</message> 
+            <button>
+                <text> VERY EASY </text>
+                <postback> QATESTENGINEER </postback>
+            </button>
+            <button>
+                <text> SOMEWHAT EASY </text>
+                <postback> SOFTWAREDEVELOPER </postback>
+            </button>
+            <button>
+                <text> NOT VERY EASY </text>
+                <postback> ITSUPPORT </postback>
+            </button>
+    </template>
+</category>
+
+</aiml>

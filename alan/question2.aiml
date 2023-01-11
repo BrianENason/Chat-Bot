@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern>SOFTWARE</pattern>
+    <template>
+        <message>Are you more interested in Development or Maintenance of 
+        Software Systems?</message> 
+            <button>
+                <text> DEVELOPMENT </text>
+                <postback>SDEVELOPMENT</postback>
+            </button>
+            <button>
+                <text>MAINTENANCE</text>
+                <postback>SMAINTENANCE</postback>
+            </button>
+    </template>
+</category>
+
+<category>
+    <pattern>HARDWARE</pattern>
+    <template>
+        <message>Are you more interested in Development or Maintenance of 
+        Hardware Systems?</message> 
+            <button>
+                <text>DEVELOPMENT</text>
+                <postback>HDEVELOPMENT</postback>
+            </button>
+            <button>
+                <text>MAINTENANCE</text>
+                <postback>HMAINTENANCE</postback>
+            </button>
+    </template>
+</category>
+
+// ---------------------------  SDEVELOPMENT --------------------------
+
+<category>
+    <pattern>SDEVELOPMENT</pattern>
+    <template>
+        <message> Do you prefer to finish one software project and then move
+        on to the next, or would you rather stick with a software project 
+        and keep revisiting it for improvement? </message> 
+            <button>
+                <text>FINISH PROJECT</text>
+                <postback>SOFTWAREDEVELOPER</postback>
+            </button>
+            <button>
+                <text>STAY WITH PROJECT</text>
+                <postback>STAYWITH</postback>
+            </button>
+    </template>
+</category>
+
+<category>
+    <pattern>STAYWITH</pattern>
+    <template>
+        <message> Are you more interested in creative stories, or are you more
+        drawn towards logic? </message> 
+            <button>
+                <text>STORIES</text>
+                <postback>QATESTENGINEER</postback>
+            </button>
+            <button>
+                <text>LOGIC</text>
+                <postback>CYBERSECURITY</postback>
+            </button>
+    </template>
+</category>
+
+// ---------------------------  HMAINTENANCE --------------------------
+
+<category>
+    <pattern>HMAINTENANCE</pattern>
+    <template>
+        <message> Do you like to outwardly help others, or do you prefer to
+        help behind the scenes </message> 
+            <button>
+                <text>OUTWARD</text>
+                <postback>ITSUPPORT</postback>
+            </button>
+            <button>
+                <text>BEHIND THE SCENES</text>
+                <postback>DATABASEADMIN</postback>
+            </button>
+    </template>
+</category>
+
+</aiml>

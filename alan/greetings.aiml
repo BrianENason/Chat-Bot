@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+// Human --- Saying Hello ---
+
+<category>
+    <pattern>START OVER</pattern>
+    <template><srai>AR.HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>HI</pattern>
+    <template><srai>AR.HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>HI *</pattern>
+    <template><srai>AR.HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>HELLO</pattern>
+    <template><srai>AR.HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>HELLO *</pattern>
+    <template><srai>AR.HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>GOOD *</pattern>
+    <template>Good <star/>
+    <srai>AR.GOOD</srai></template>
+</category>
+
+// Alan --- Greeing Response #1 ---
+
+<category>
+    <pattern>AR.HELLO</pattern>
+    <template>
+        <message>Hello my friend.<br/> It is my pleasure to meet you!<br/><br/>
+        My name is Alan Turing.<br/>
+        I am a career advisor chatbot here to help you with your career 
+        decision-making process.<br/>
+        <delay>5</delay>
+        If you want to end this chat at any time, please feel free to type "Exit".<br/>
+        <delay>2</delay>
+        To get started, please tell me what interest you more: Software or Hardware?
+        <delay>1</delay>
+            <button>
+                <text>SOFTWARE</text>
+                <postback>SOFTWARE</postback>
+            </button>
+            <button>
+                <text>HARDWARE</text>
+                <postback>HARDWARE</postback>
+            </button>
+        </message>
+    </template>
+</category>
+
+<category>
+    <pattern>AR.GOOD</pattern>
+    <template>
+        <message>, my friend.<br/> It is my pleasure to meet you!<br/><br/>
+        My name is Alan Turing.<br/>
+        I am a career advisor chatbot here to help you with your career 
+        decision-making process.<br/>
+        <delay>5</delay>
+        If you want to end this chat at any time, please feel free to type "Exit".<br/>
+        <delay>2</delay>
+        To get started, please tell me what interest you more: Software or Hardware?
+        <delay>1</delay>
+            <button>
+                <text>SOFTWARE</text>
+                <postback>SOFTWARE</postback>
+            </button>
+            <button>
+                <text>HARDWARE</text>
+                <postback>HARDWARE</postback>
+            </button>
+        </message>
+    </template>
+</category>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</aiml>

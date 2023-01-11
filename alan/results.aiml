@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+// ---------------------------  SOFTWAREDEVELOPER --------------------------
+
+<category>
+  <pattern>SOFTWAREDEVELOPER</pattern>
+  <template> Based on your answers, I think you would be interested in 
+  a career in Software Development as a Software Developer! <br/>
+  <delay>5</delay>
+  If you would like to learn more about this fascinating career field, 
+  please click on the link below.<br/>
+  <delay>2</delay>
+      <split/>  
+        <card>
+            <title>Software Developer</title>
+            <image>https://s3-us-east-2.amazonaws.com/maryville/wp-content/uploads/2020/01/20133422/software-developer-coding.jpg</image>
+      <button>
+        <link>
+            <text>Click for more info</text>
+            <url>https://simple.wikipedia.org/wiki/Software_developer</url>
+        </link>
+      </button>
+        </card>
+      <split/>
+      <delay>6</delay>
+      Once you're finished explore this field, what would you like to do?
+  <button>
+      <text>EXIT THIS SESSION</text>
+      <postback>EXIT</postback>
+  </button>
+  <button>
+      <text>START OVER</text>
+      <postback>AR.HELLO</postback>
+  </button>
+    <button>
+      <text>EXPLORE ALL JOB OPTIONS</text>
+      <postback>AR.ALL</postback>
+  </button>
+  </template>
+</category>
+
+
+// ---------------------------  ITSUPPORT --------------------------
+
+<category>
+  <pattern>ITSUPPORT</pattern>
+  <template> Based on your answers, I think you would be interested in 
+  a career in IT Support as an IT Support Specialist! <br/>
+  <delay>5</delay>
+  If you would like to learn more about this fascinating career field, 
+  please click on the link below.<br/>
+  <delay>2</delay>
+      <split/>  
+        <card>
+            <title>IT Support Specialist</title>
+            <image>https://www.firstline-it.com/wp-content/uploads/2014/06/IT-Support.jpg</image>
+      <button>
+        <link>
+            <text>Click for more info</text>
+            <url>https://www.comptia.org/content/it-careers-path-roadmap/it-support-specialist#:~:text=IT%20Support%20Specialists%20are%20responsible,via%20the%20telephone%20or%20webchat.r</url>
+        </link>
+      </button>
+        </card>
+      <split/>
+      <delay>6</delay>
+      Once you're finished explore this field, what would you like to do?
+  <button>
+      <text>EXIT THIS SESSION</text>
+      <postback>EXIT</postback>
+  </button>
+  <button>
+      <text>START OVER</text>
+      <postback>AR.HELLO</postback>
+  </button>
+    <button>
+      <text>EXPLORE ALL JOB OPTIONS</text>
+      <postback>AR.ALL</postback>
+  </button>
+  </template>
+</category>
+
+// ---------------------------  DATABASEADMIN --------------------------
+
+<category>
+  <pattern> DATABASEADMIN </pattern>
+  <template> Based on your answers, I think you would be interested in 
+  a career in Database Administration as a Database Administrator! <br/>
+  <delay>5</delay>
+  If you would like to learn more about this fascinating career field, 
+  please click on the link below.<br/>
+  <delay>2</delay>
+      <split/>  
+        <card>
+            <title>Database Administrator</title>
+            <image>https://techgenix.com/tgwordpress/wp-content/uploads/2018/09/dba_admin.jpg</image>
+      <button>
+        <link>
+            <text>Click for more info</text>
+            <url>https://www.techtarget.com/searchdatamanagement/definition/database-administrator</url>
+        </link>
+      </button>
+        </card>
+      <split/>
+      <delay>6</delay>
+      Once you're finished explore this field, what would you like to do?
+  <button>
+      <text>EXIT THIS SESSION</text>
+      <postback>EXIT</postback>
+  </button>
+  <button>
+      <text>START OVER</text>
+      <postback>AR.HELLO</postback>
+  </button>
+    <button>
+      <text>EXPLORE ALL JOB OPTIONS</text>
+      <postback>AR.ALL</postback>
+  </button>
+  </template>
+</category>
+
+// ---------------------------  CYBERSECURITY --------------------------
+
+<category>
+  <pattern> CYBERSECURITY </pattern>
+  <template> Based on your answers, I think you would be interested in 
+  a career in Cyber Security as a Cyber Security Specialist! <br/>
+  <delay>5</delay>
+  If you would like to learn more about this fascinating career field, 
+  please click on the link below.<br/>
+  <delay>2</delay>
+      <split/>  
+        <card>
+            <title>Cyber Security Specialist</title>
+            <image>https://www.ftccollege.edu/ftc2020/wp-content/uploads/2021/04/cyber-security-specialist-skills.jpg</image>
+      <button>
+        <link>
+            <text>Click for more info</text>
+            <url>https://www.fieldengineer.com/skills/cyber-security-specialist#:~:text=Cyber%20Security%20Specialists%20are%20responsible,protect%20against%20attacks%20and%20threats.</url>
+        </link>
+      </button>
+        </card>
+      <split/>
+      <delay>6</delay>
+      Once you're finished explore this field, what would you like to do?
+  <button>
+      <text>EXIT THIS SESSION</text>
+      <postback>EXIT</postback>
+  </button>
+  <button>
+      <text>START OVER</text>
+      <postback>AR.HELLO</postback>
+  </button>
+    <button>
+      <text>EXPLORE ALL JOB OPTIONS</text>
+      <postback>AR.ALL</postback>
+  </button>
+  </template>
+</category>
+
+// ---------------------------  QATESTENGINEER --------------------------
+
+<category>
+  <pattern>QATESTENGINEER</pattern>
+  <template> Based on your answers, I think you would be interested in 
+  a career in in QA Testing as a QA Test Engineer!<br/>
+  <delay>5</delay>
+  If you would like to learn more about this fascinating career field, 
+  please click on the link below.<br/>
+  <delay>2</delay>
+      <split/>  
+        <card>
+            <title>QA Test Engineer</title>
+            <image>https://d3eeke16mv0lt7.cloudfront.net/sites/default/files/styles/article_hero_image/public/field/image/test-automation-engineer-career.jpg</image>
+      <button>
+        <link>
+            <text>Click for more info</text>
+            <url>https://u-tor.com/topic/what-does-qa-engineer-do</url>
+        </link>
+      </button>
+        </card>
+      <split/>
+      <delay>6</delay>
+      Once you're finished explore this field, what would you like to do?
+  <button>
+      <text>EXIT THIS SESSION</text>
+      <postback>EXIT</postback>
+  </button>
+  <button>
+      <text>START OVER</text>
+      <postback>AR.HELLO</postback>
+  </button>
+    <button>
+      <text>EXPLORE ALL JOB OPTIONS</text>
+      <postback>AR.ALL</postback>
+  </button>
+  </template>
+</category>
+
+
+// ---------------------------  ALL JOBS --------------------------
+
+<category>
+    <pattern>AR.ALL</pattern>
+    <template>
+        <message>
+            My database is ever-growing, and just like any good "Human", I am
+            always learning, but for right now, I know about these jobs.<br/>
+            <delay>3</delay>
+            If you would like to learn more about them, please click through 
+            the links below!<br/>
+            <delay>3</delay>
+            
+            <link>
+              <text> QA Test Engineer </text>
+              <url>https://u-tor.com/topic/what-does-qa-engineer-do </url>
+            </link>
+                        <break></break>
+            <link>
+              <text> Cyber Security </text>
+              <url>https://www.fieldengineer.com/skills/cyber-security-specialist#:~:text=Cyber%20Security%20Specialists%20are%20responsible,protect%20against%20attacks%20and%20threats.</url>
+            </link>
+                        <break></break>
+            <link>
+              <text> IT Support Specialist </text>
+              <url>https://www.comptia.org/content/it-careers-path-roadmap/it-support-specialist#:~:text=IT%20Support%20Specialists%20are%20responsible,via%20the%20telephone%20or%20webchat.r</url>
+            </link>
+                        <break></break>
+            <link>
+              <text> Database Administrator </text>
+              <url>https://www.techtarget.com/searchdatamanagement/definition/database-administrator</url>
+            </link>
+                        <break></break>
+            <link>
+              <text> Software Developer </text>
+              <url>https://simple.wikipedia.org/wiki/Software_developer</url>
+            </link>
+            <delay>6</delay>
+            Whenever you are finished, you can type "Exit",
+            or just close this bot.<br/> You can always start over by typing "Start Over".
+        </message>
+    </template>
+</category>
+
+</aiml>

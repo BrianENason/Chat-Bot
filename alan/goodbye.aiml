@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+// Human --- Saying Goodbye ---
+
+<category>
+    <pattern>BYE</pattern>
+    <template><srai>HOW.DID.I.DO</srai></template>
+</category>
+<category>
+    <pattern>GOODBYE</pattern>
+    <template><srai>HOW.DID.I.DO</srai></template>
+</category>
+<category>
+	<pattern>FAREWELL</pattern>
+	<template><srai>HOW.DID.I.DO</srai></template>
+</category>
+<category>
+	<pattern>FAREWELL *</pattern>
+	<template><srai>HOW.DID.I.DO</srai></template>
+</category>
+
+// Human --- Ending conversation ---
+
+<category>
+	<pattern>END</pattern>
+	<template><srai>END</srai></template>
+</category>
+
+<category>
+	<pattern>DONE</pattern>
+	<template><srai>END</srai></template>
+</category>
+
+// Alan --- EXIT -----
+
+<category>
+    <pattern>EXIT</pattern>
+    <template>
+        <message>Are you sure you want to exit this conversation?</message> 
+            <button>
+                <text>YES</text>
+                <postback>HOW.DID.I.DO</postback>
+            </button>
+            <button>
+                <text>NO</text>
+                <postback>NOEND</postback>
+            </button>
+    </template>
+</category>
+
+// Alan --- Response to goodbye ---
+
+<category><pattern>BYE</pattern>
+    <template>
+    Goodbye, my friend.<br/><br/>
+    It has been a pleasure helping you out today with your career 
+    exploration.<br/><br/>
+    Please feel free to come back any time if you have any more 
+    questions.<br/><br/>
+    </template>
+</category>
+
+// Alan --- Response to end ---
+
+<category>
+    <pattern>END</pattern>
+  <template> 
+  <message> Are you sure you want to end this conversation? </message> 
+  <button>
+      <text>YES</text>
+      <postback>HOW.DID.I.DO</postback>
+  </button>
+  <button>
+      <text> NO </text>
+      <postback>NOEND</postback>
+  </button>
+  </template>
+</category>
+
+// Alan --- Response to NOEND ---
+
+<category>
+    <pattern>NOEND</pattern>
+    <template>
+    I am glad you don't want this conversation to end. 
+    <delay>2</delay>
+    I don't want that either.
+    <delay>2</delay>
+    If you would like to start over from the beginning, please type "Hello".
+    Otherwise, please feel free to continue from our previous topic
+    of conversation.
+    </template>
+</category>
+
+// ---------------------------  HOW DID I DO --------------------------
+
+<category>
+    <pattern>HOW.DID.I.DO</pattern>
+        <template>
+        <message>Before you go, please let me know how I did so I can continue to improve.</message> 
+  <button>
+        <text>Great! You nailed it!</text>
+        <postback>REVIEW.GREAT</postback>
+    </button>
+    <button>
+        <text>Good, but some room for improvement.</text>
+        <postback>REVIEW.GOOD</postback>
+    </button>
+    <button>
+        <text>I'm not impressed.</text>
+        <postback>REVIEW.MEH</postback>
+    </button>
+    <button>
+        <text>So much room for improvement that you should start from scratch!</text>
+        <postback>REVIEW.BAD</postback>
+    </button>
+        </template>
+</category>
+
+<category>
+    <pattern>REVIEW.GREAT</pattern>
+    <template>Wonderful! Thank you for your time!</template>
+</category>
+<category>
+    <pattern>REVIEW.GOOD</pattern>
+    <template>I am glad to hear that. 
+    I am always learning, so come back anytime!</template>
+</category>
+<category>
+    <pattern>REVIEW.MEH</pattern>
+    <template>I suppose we can all use some improvement. 
+    I'll try to be better next time.</template>
+</category>
+<category>
+    <pattern>REVIEW.BAD</pattern>
+    <template>Wow! Only a true friend would be that honest. 
+    Thank you for your feedback.</template>
+</category>
+
+</aiml>
